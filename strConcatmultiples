@@ -1,0 +1,9 @@
+package Main;
+
+public class Main{
+	public static void main (String[] args) {
+		String name = "Michael Jackson";
+		String prof = " , PhD in Music";
+		System.out.println(name + prof);
+	}
+}
