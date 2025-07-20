@@ -1,20 +1,23 @@
 package golly;
-
+import java.util.Scanner;
 public class Bool {
 
 	public static void main(String[] args) {
-		boolean isPrime = true;
-		if(isPrime == true) {
-			System.out.println("Divisors are 1 and that num.");
-		}else {
-			System.out.println("Garbage value");
-			}
+	
 		
-		double Constant = 2.71;
-		if(Constant>2.71 && Constant<4) {
-			System.out.println("Pi");
-		}else {
-			System.out.println("Euler's number! ");
+		Scanner input = new Scanner (System.in);
+		System.out.println("Enter company code : ");
+		int CompanyCode = input.nextInt();
+		
+		switch(CompanyCode) {
+		case 1: 
+			System.out.println("Microsoft ");
+		break;
+		case 2: 
+			System.out.println("Apple Mac OS");
+		break;
+		default:
+			System.out.println("Dell, HP, Lenovo, MSI, Gigabyte!");
 		}
 		
 		
