@@ -1,0 +1,21 @@
+package constructors;
+import java.util.Scanner;
+public class OverloadDemo {
+
+	public static void main(String[] args) {
+		double a = 1;
+		int b = 2;
+		double rem = a%b;
+		
+		int num = 1 ;
+		
+		// math class functions 
+		//System.out.print((int)(Math.random()*100)); 
+		
+	  Scanner string = new Scanner(System.in) ;
+	  System.out.println("Input a string: ");
+	  String input = string.next();
+	  System.out.println(input);
+	}
+
+}
