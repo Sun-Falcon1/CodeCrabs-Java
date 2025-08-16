@@ -1,29 +1,74 @@
 package chapterbBase;
+import java.util.Scanner;
 
-class Student {
-   public int roll_no;
-   public String name;
-   
-   Student (int roll_no, String name){
-	   this.roll_no = roll_no;
-	   this.name = name ;   
-   }
-}
-
+//pastry and ice cream parlor shopping cart 
 public class GetSet{
 	public static void main(String[] args) {
-		Student[] arr = new Student[5]; //array declaration and initialization 
-		
-		//array inputs 
-	arr[0] = new Student(1, "Surya");
-	arr[1] = new Student(1, "Einstein");
-	arr[2] = new Student(2, "Macbeth");
-	arr[3] = new Student(3, "Jordan");
-	arr[4] = new Student(4, "Mickey mouse");
 	
-	//loop for accessing the elements 
-	for(int i =0; i<arr.length; i++) {
-		System.out.println("AT INDEX " + i + "Student id is"+ arr[i].roll_no +"name is " + arr[i].name+ " ");
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Welcome to Sunshine Paradise. Would you love to have some pastries/ ice creams? ");
+		System.out.println("Enter 1 for yes , 2 for no.");
+		
+		int select = input.nextInt();
+		
+		 switch(select){
+			 case 1: 
+				 System.out.println("Yes");
+				break;
+			 case 2: 
+				 System.out.println("No");
+			default: 
+				System.out.println("Eat chillies");
+		 }
+		
+		
+		System.out.println("Which item do you wanna buy? ");
+		System.out.println("Select 1 for Ice-Cream , 2 for Pastries");
+		int item = input.nextInt();
+		
+	
+		switch(item){
+		 case 1: 
+			 System.out.println("Ice Cream");
+			break;
+		 case 2: 
+			 System.out.println("Pastries");
+		default: 
+			System.out.println("Eat Jalapeño");
+	 }
+		
+		System.out.println("Which flavour would you like? ");
+		System.out.println("1. Butterscotch \2.Blueberry cheese. \3.Raspberry whipped cream. \4.Muffin Choco donut \"5. Lotus Oreo with dark choco fudge. ");
+		int flavours = input.nextInt();
+		
+		
+		switch(flavours) {
+		case 1: 
+			 System.out.println("Butterscotch");
+			break;
+		 case 2: 
+			 System.out.println("Blueberry cheese");
+	
+		case 3: 
+			 System.out.println("Raspberry whipped cream");
+			break;
+		 case 4: 
+			 System.out.println("Muffin Choco donut");
+			break;
+		 case 5: 
+			 System.out.println("Lotus Oreo with dark choco fudge");
+		  default: 
+			System.out.println("Go to hell");
+		}
+		
+		System.out.println("What is the price for each ? ");
+		int price = input.nextInt();
+		
+		System.out.println("What is the quantity you want to buy of that item ? ");
+		int quantity = input.nextInt();
+		
+		System.out.println("You have bought " +quantity + flavours + "'s" + "and your payment is" + quantity*price);
+		
 	}
 	}
-}
